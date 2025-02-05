@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book an appointment at Ayurmax Hospital for personalized Ayurvedic treatments and wellness services.">
+    <meta name="keywords" content="Ayurvedic Appointment, Health Consultation, Ayurmax Hospital">
+    <meta name="author" content="Ayurmax Hospital">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Appointment | Ayurmax Hospital">
+    <meta property="og:description"
+        content="Schedule your appointment at Ayurmax Hospital for top-tier Ayurvedic treatments and holistic health services.">
+    <meta property="og:image" content="assets/img/logo ayurmax.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ayurmaxhospital.com/appointment.html">
+
+    <link rel="icon" type="image/png" href="assets/img/fevicon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="assets/js/appointment.js" defer></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Appointment | Ayurmax Hospital</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="contact-info">
+                <p>Email: <a href="mailto:ayurmaxx@gmail.com">ayurmaxx@gmail.com</a></p>
+                <p>Address: 82, Vivek Vihar, Pocket 3, Balliwala Chowk, Dehradun, Uttarakhand 248001</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ayurmaxhospital" target="_blank"><img
+                        src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/ayurmaxhospital" target="_blank"><img
+                        src="https://img.icons8.com/color/100/instagram-new--v1.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <a href="/">
+                <img src="assets/img/logo ayurmax.png" alt="Ayurmax Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/#services">Treatments</a></li>
+                    <li><a href="/#experienced-team">Doctors</a></li>
+                    <li><a href="/#facility">Facilities</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="blog.php">Blogs</a></li>
+                    <li><a href="appointment.html" class="book-now-btn">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="calendar-section" id="date-container">
+            <h2 class="appointment-title">Pick a Date</h2>
+            <table class="calendar-table" id="calendar"></table>
+        </section>
+
+        <section class="appointment-form-section" id="form-container">
+            <h2 class="appointment-title">Appointment Booking</h2>
+            <form id="appointment-form" class="appointment-form">
+                <!-- Doctor Selection -->
+                <div class="form-group">
+                    <label for="doctor">Select Doctor <span class="required"></span></label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">Select Doctor</option>
+                        <option value="Dr. Arvind Kr. Chaudhary">Dr. Arvind Kr. Chaudhary</option>
+                        <option value="Dr. Lalit Kr. Chaudhary">Dr. Lalit Kr. Chaudhary</option>
+                        <option value="Dr. Rekha Chaudhary">Dr. Rekha Chaudhary</option>
+                        <option value="Dr. Priti Chaudhary">Dr. Priti Chaudhary</option>
+                    </select>
+                </div>
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Name <span class="required"></span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone <span class="required"></span></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <!-- Description -->
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </div>
+
+                <!-- Patient Status -->
+                <div class="form-group">
+                    <label for="patient_status">Patient Status <span class="required"></span></label>
+                    <select id="patient_status" name="patient_status" required>
+                        <option value="">Select Status</option>
+                        <option value="Old Patient">Old Patient</option>
+                        <option value="New Patient">New Patient</option>
+                    </select>
+                </div>
+
+                <!-- File Number -->
+                <div class="form-group">
+                    <label for="file_number">File Number (if old patient)</label>
+                    <input type="text" id="file_number" name="file_number">
+                </div>
+
+                <input type="submit" value="Book Appointment" class="submit-btn">
+            </form>
+        </section>
+
+        <section class="overview" id="overview">
+            <h2 class="section-title">Appointment Overview</h2>
+            <div class="overview-details">
+                <div class="overview-item">
+                    <h3>Doctor</h3>
+                    <p id="doctor_selected">N/A</p>
+                </div>
+                <div class="overview-item">
+                    <h3>Date</h3>
+                    <p id="date_selected">N/A</p>
+                </div>
+                <div class="overview-item">
+                    <h3>Name</h3>
+                    <p id="name_selected">N/A</p>
+                </div>
+                <div class="overview-item">
+                    <h3>Phone</h3>
+                    <p id="phone_selected">N/A</p>
+                </div>
+                <div class="overview-item">
+                    <h3>Description</h3>
+                    <p id="description_selected">N/A</p>
+                </div>
+                <div class="overview-item">
+                    <h3>Patient Status</h3>
+                    <p id="status_selected">N/A</p>
+                </div>
+                <div class="overview-item">
+                    <h3>File Number</h3>
+                    <p id="file_selected">N/A</p>
+                </div>
+            </div>
+            <button id="back-to-form" class="submit-btn">Home</button>
+        </section>
+
+    </main>
+
+    <a href="https://wa.me/8171200004" target="_blank" class="whatsapp-button">
+        <img src="https://img.icons8.com/?size=100&id=A1JUR9NRH7sC&format=png&color=000000" alt="WhatsApp">
+    </a>
+
+    <button id="backToTop" aria-label="Back to top">⬆️</button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <img src="assets/img/logo ayurmax.png" alt="Ayurmax Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/#services">Treatment</a></li>
+                    <li><a href="/#experienced-team">Doctor</a></li>
+                    <li><a href="/#facility">Facility</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:ayurmaxx@gmail.com">ayurmaxx@gmail.com</a></p>
+                <p>Phone: <a href="tel:+918171200004">+91 8171200004</a></p>
+                <p>Address: 82, Vivek Vihar, Pocket 3, Balliwala Chowk, Dehradun, Uttarakhand 248001</p>
+            </div>
+            <div class="map-container">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps?q=82,+Vivek+Vihar,+Pocket+3,+Balliwala+Chowk,+Dehradun,+Uttarakhand+248001&output=embed"
+                    width="100%" height="150"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ayurmax Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

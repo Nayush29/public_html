@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayurmax Hospital offers premier Ayurvedic treatments and wellness services.">
+    <meta name="keywords" content="Ayurvedic Treatment, Health, Wellness, Ayurmax Hospital">
+    <meta name="author" content="Ayurmax Hospital">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Ayurmax Hospital">
+    <meta property="og:description" content="Experience holistic health with Ayurmax's top-notch Ayurvedic treatments.">
+    <meta property="og:image" content="assets/img/logo ayurmax.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ayurmaxhospital.com">
+
+    <link rel="icon" type="image/png" href="assets/img/fevicon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Ayurmax Hospital - Premier Ayurvedic Treatments</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="contact-info">
+                <p>Email: <a href="mailto:ayurmaxx@gmail.com">ayurmaxx@gmail.com</a></p>
+                <p>Address: 82, Vivek Vihar, Pocket 3, Balliwala Chowk, Dehradun, Uttarakhand 248001</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ayurmaxhospital" target="_blank"><img
+                        src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/ayurmaxhospital" target="_blank"><img
+                        src="https://img.icons8.com/color/100/instagram-new--v1.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <a href="/">
+                <img src="assets/img/logo ayurmax.png" alt="Ayurmax Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#services">Treatments</a></li>
+                    <li><a href="#experienced-team">Doctors</a></li>
+                    <li><a href="#facility">Facilities</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="blog.php">Blogs</a></li>
+                    <li><a href="appointment.html" class="book-now-btn">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="carousel" id="treatment-carousel">
+        <button class="carousel-arrow carousel-arrow-left" onclick="moveCarousel('Treatment', -1)">&#8592;</button>
+
+        <div class="carousel-content" id="treatment-carousel-content">
+            <!-- Treatment Carousel Items will be injected here -->
+        </div>
+
+        <button class="carousel-arrow carousel-arrow-right" onclick="moveCarousel('Treatment', 1)">&#8594;</button>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <div class="cta-left">
+                    <img src="assets/img/team.png" alt="Team Support Image" />
+                </div>
+                <div class="cta-center">
+                    <div class="cta-info">
+                        <h2>Meet The Team Support Medical Service</h2>
+                        <p>For us, there are no minor aspects, because quality matters.</p>
+                    </div>
+                </div>
+                <div class="cta-right">
+                    <a href="appointment.html" class="cta-button">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services-container">
+            <div class="section-info">
+                <div class="section-info-left">
+                    <p class="subtitle">OUR BEST SERVICE</p>
+                    <h2 class="title">High-Quality Treatments</h2>
+                </div>
+                <div class="section-info-right">
+                    <p class="description">We are proud to work with some of the most advanced medical experts, bringing
+                        you world-class treatments.</p>
+                </div>
+            </div>
+
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="assets/img/part 1/1.png" alt="Autoimmune Disease">
+                    <h3>Autoimmune Disease</h3>
+                    <p>Comprehensive research and treatment for autoimmune disorders.</p>
+                    <button onclick="location.href='/Treatment/Autoimmune-Disease.html'">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <img src="assets/img/part 1/2.png" alt="Cancer">
+                    <h3>Cancer</h3>
+                    <p>Advanced diagnosis and treatment options for various types of cancer.</p>
+                    <button onclick="location.href='/Treatment/Cancer.html'">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <img src="assets/img/part 1/3.png" alt="Psoriasis and Leukoderma">
+                    <h3>Psoriasis & Leukoderma</h3>
+                    <p>Effective treatments for skin conditions like psoriasis and leukoderma.</p>
+                    <button onclick="location.href='/Treatment/Psoriasis-and-leukoderma.html'">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <img src="assets/img/part 1/4.png" alt="Cardiac Disease">
+                    <h3>Cardiac Disease</h3>
+                    <p>Comprehensive heart health diagnostics and treatments.</p>
+                    <button onclick="location.href='/Treatment/Cardiac-Disease.html'">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <img src="assets/img/part 1/5.png" alt="PCOD and Endometriosis">
+                    <h3>PCOD and Endometriosis</h3>
+                    <p>Diagnosis and treatment for gynecological disorders like PCOD and endometriosis.</p>
+                    <button onclick="location.href='/Treatment/PCOD-and-Endometriosis.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/6.png" alt="Neurological Disease">
+                    <h3>Neurological Disease</h3>
+                    <p>Advanced diagnosis and care for neurological conditions.</p>
+                    <button onclick="location.href='/Treatment/Neurological-Disease.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/7.png" alt="Kidney Disease">
+                    <h3>Kidney Disease</h3>
+                    <p>Comprehensive care and treatments for kidney-related issues.</p>
+                    <button onclick="location.href='/Treatment/Kidney-Disease.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/8.png" alt="Child Developmental Disease">
+                    <h3>Child Developmental Disease</h3>
+                    <p>Early diagnosis and intervention for developmental disorders in children.</p>
+                    <button onclick="location.href='/Treatment/Child-Developmental-Disease.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/9.png" alt="Allergy and Respiratory Disorder">
+                    <h3>Allergy and Respiratory Disorder</h3>
+                    <p>Diagnosis and management of allergies and respiratory issues.</p>
+                    <button onclick="location.href='/Treatment/Allergy-and-Respiratory-Disorder.html'">Learn
+                        More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/10.png" alt="Joint and Spine Care">
+                    <h3>Joint and Spine Care</h3>
+                    <p>Comprehensive treatment for joint and spine-related issues.</p>
+                    <button onclick="location.href='/Treatment/Joint-and-Spine-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/11.png" alt="Ayurvedic Cancer Care by Dr. Arvind Chaudhry">
+                    <h3>Ayurvedic Cancer Care By Dr. Arvind Chaudhry</h3>
+                    <p>Personalized Ayurvedic approach to cancer care, guided by Dr. Arvind Chaudhry.</p>
+                    <button onclick="location.href='/Treatment/Ayurvedic-Cancer-Care-by-Dr.Arvind-Chaudhry.html'">Learn
+                        More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/12.png" alt="Panchkarma Therapy">
+                    <h3>Panchkarma Therapy</h3>
+                    <p>Traditional detoxification therapy for holistic health restoration.</p>
+                    <button onclick="location.href='/Treatment/Panchkarma-Therapy.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/13.png" alt="Customized Ayurvedic Treatment">
+                    <h3>Customized Ayurvedic Treatment for Patients</h3>
+                    <p>Personalized treatment plans based on Ayurvedic principles for various health concerns.</p>
+                    <button onclick="location.href='/Treatment/Customized-Ayurvedic-Treatment.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/14.png" alt="Swarna Prashan">
+                    <h3>Swarna Prashan</h3>
+                    <p>Specialized Ayurvedic treatment for enhancing immunity and overall health.</p>
+                    <button onclick="location.href='/Treatment/Swarna-Prashan.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/15.png" alt="Neuro Ortho Care by Dr. Arvind Chaudhry">
+                    <h3>Neuro Ortho Care by Dr. Arvind Chaudhry</h3>
+                    <p>Advanced treatment for neurological and orthopedic conditions, led by Dr. Arvind Chaudhry.</p>
+                    <button onclick="location.href='/Treatment/Neuro-Ortho-Care-by-Dr.Arvind-Chaudhry.html'">Learn
+                        More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/16.png" alt="Detox Package">
+                    <h3>Detox Package</h3>
+                    <p>Comprehensive detox packages to cleanse and rejuvenate the body.</p>
+                    <button onclick="location.href='/Treatment/Detox-Package.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/17.png" alt="Skin and Darma Care by Dr. Arvind and Dr. Preeti">
+                    <h3>Skin and Darma Care</h3>
+                    <p>Expert skincare and dermatology treatments from Dr. Arvind and Dr. Preeti.</p>
+                    <button
+                        onclick="location.href='/Treatment/Skin-and-Darma-Care-by-Dr.Arvind-and-Dr.Preeti.html'">Learn
+                        More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1//18.png" alt="Male and Female Infertility Treatment">
+                    <h3>Male and Female Infertility Treatment</h3>
+                    <p>Comprehensive treatments for male and female infertility issues.</p>
+                    <button onclick="location.href='/Treatment/Male-and-Female-Infertility-Treatment.html'">Learn
+                        More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/19.png" alt="Kidney Care">
+                    <h3>Kidney Care</h3>
+                    <p>Comprehensive care and treatments for kidney-related issues.</p>
+                    <button onclick="location.href='/Treatment/Kidney-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/20.png" alt="TB Care">
+                    <h3>TB Care</h3>
+                    <p>Advanced treatments and management plans for tuberculosis.</p>
+                    <button onclick="location.href='/Treatment/TB-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/21.png" alt="Anorectal Care & Piles Care">
+                    <h3>Anorectal Care & Piles Care</h3>
+                    <p>Expert Ayurvedic treatments for anorectal disorders, including piles, with holistic care for
+                        long-term relief.</p>
+                    <button onclick="location.href='/Treatment/Anorectal-Piles-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/22.png" alt="Gastro Urinary Care">
+                    <h3>Gastro Care</h3>
+                    <p>Comprehensive Ayurvedic solutions for gastrointestinal and urinary problems.</p>
+                    <button onclick="location.href='/Treatment/Gastro-Urinary-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/23.png" alt="Urinary Care">
+                    <h3>Urinary Care</h3>
+                    <p>Comprehensive Ayurvedic treatments for urinary tract infections, bladder health, and related
+                        conditions.</p>
+                    <button onclick="location.href='/Treatment/Urinary-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/24.png" alt="Chronic Wound Care">
+                    <h3>Chronic Wound Care</h3>
+                    <p>Holistic Ayurvedic treatments for chronic wounds and conditions, promoting faster recovery and
+                        long-term healing.</p>
+                    <button onclick="location.href='/Treatment/Chronic-Wound-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/25.png" alt="Laser Therapy & Ksharsutra Therapy">
+                    <h3>Laser Therapy & Ksharsutra Therapy</h3>
+                    <p>Non-invasive laser treatments combined with traditional Ayurvedic Ksharsutra therapy for
+                        effective treatment of various conditions like fistula, hemorrhoids, and more.</p>
+                    <button onclick="location.href='/Treatment/Laser-Ksharsutra-Therapy.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/26.png" alt="Gynecology Care">
+                    <h3>Gynecology Care</h3>
+                    <p>Specialized Ayurvedic treatments for women's health and gynecological disorders.</p>
+                    <button onclick="location.href='/Treatment/Gynecology-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/27.png" alt="Digestive Care">
+                    <h3>Ayurvedic Treatment for Digestive Disorders</h3>
+                    <p>Holistic treatments for various digestive issues using Ayurvedic principles.</p>
+                    <button onclick="location.href='/Treatment/Digestive-Care.html'">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/img/part 1/28.png" alt="Hair Care">
+                    <h3>Hair Care</h3>
+                    <p>Effective Ayurvedic hair care solutions for hair loss, dandruff, and scalp health.</p>
+                    <button onclick="location.href='/Treatment/Hair-Care.html'">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experienced-team">
+        <h2>Our Experienced Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="assets/img/ARVIND-SIR.png" alt="Dr. Arvind Kr. Chaudhary">
+                <h3>DR. ARVIND KR. CHAUDHARY</h3>
+                <p>Director and Chief Physician Ayurmax Multispeciality Ayurveda Hospital and Panchkarmacentre...
+                </p>
+                <button onclick="location.href='/Doctor/Dr-Arvind-Kr-Chaudhary.html'">Know More</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/img/WhatsApp-Image-2020-10-09-at-2.08.02-PM.jpeg" alt="Dr. Lalit Kr. Chaudhary">
+                <h3>DR. LALIT KR. CHAUDHARY</h3>
+                <p>Dr. Lalit Kr. Chaudhary is a skilled anorectal surgeon, Ksharsutra...</p>
+                <button onclick="location.href='/Doctor/Dr-Lalit-Kr-Chaudhary.html'">Know More</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/img/REKHA-MAM.png" alt="Dr. Rekha Chaudhary">
+                <h3>DR. REKHA CHAUDHARY</h3>
+                <p>Director and Chief Physician Ayurmax Multispeciality Ayurveda Hospital and Panchkarmacentre...
+                </p>
+                <button onclick="location.href='/Doctor/Dr-Rekha-Chaudhary.html'">Know More</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/img/WhatsApp-Image-2020-10-09-at-2.08.01-PM.jpeg" alt="Dr. Priti Chaudhary">
+                <h3>DR. PRITI CHAUDHARY</h3>
+                <p>Dr. Priti Chaudhary practices as an Ayurvedic Dermatologist and Cosmetologist...</p>
+                <button onclick="location.href='/Doctor/Dr-Priti-Chaudhary.html'">Know More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="facility" id="facility">
+        <div class="facility-container">
+            <div class="section-info">
+                <div class="section-info-left">
+                    <p class="subtitle"> WHY CHOOSE US</p>
+                    <h2 class="title">Advanced Medical Facilities</h2>
+                </div>
+                <div class="section-info-right">
+                    <p class="description">We offer state-of-the-art medical facilities with advanced technology and
+                        world-class expertise.</p>
+                </div>
+            </div>
+
+            <div class="facility-cards">
+                <div class="facility-card">
+                    <img src="assets/img/part 2/Customized Ayurvedic Treatment for Patients.png"
+                        alt="Customized Ayurvedic Treatment">
+                    <h3>Customized Ayurvedic Treatment for Patients</h3>
+                    <p>Personalized treatment plans based on Ayurvedic principles for various health concerns.</p>
+                    <button onclick="location.href='facility.html'">Know More</button>
+                </div>
+                <div class="facility-card">
+                    <img src="assets/img/part 2/Indoor Pharmacy.png" alt="Indoor Pharmacy">
+                    <h3>Indoor Pharmacy</h3>
+                    <p>Comprehensive in-house pharmacy with a wide range of medicines.</p>
+                    <button onclick="location.href='facility.html'">Know More</button>
+                </div>
+                <div class="facility-card">
+                    <img src="assets/img/part 2/Extensive Operation Theatre.png" alt="Extensive Operation Theatre">
+                    <h3>Extensive Operation Theatre</h3>
+                    <p>State-of-the-art operation theatre equipped for complex procedures.</p>
+                    <button onclick="location.href='facility.html'">Know More</button>
+                </div>
+                <div class="facility-card">
+                    <img src="assets/img/part 2/Indoor Patient Care (IPD).png" alt="Indoor Patient Care (IPD)">
+                    <h3>Indoor Patient Care (IPD)</h3>
+                    <p>Comprehensive indoor care for patients requiring hospitalization.</p>
+                    <button onclick="location.href='facility.html'">Know More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="counter-wrapper">
+            <div class="counter">
+                <div class="counter-icon">
+                    <img src="assets/img/counter_icon_1.png" alt="Active Clients">
+                </div>
+                <div class="counter-number">50k+</div>
+                <p class="counter-title">Success Stories</p>
+            </div>
+            <div class="counter">
+                <div class="counter-icon">
+                    <img src="assets/img/counter_icon_2.png" alt="Team Support">
+                </div>
+                <div class="counter-number">24x7</div>
+                <p class="counter-title">Team Support</p>
+            </div>
+            <div class="counter">
+                <div class="counter-icon">
+                    <img src="assets/img/counter_icon_3.png" alt="Projects Completed">
+                </div>
+                <div class="counter-number">40+</div>
+                <p class="counter-title">Treatments</p>
+            </div>
+            <div class="counter">
+                <div class="counter-icon">
+                    <img src="assets/img/counter_icon_4.png" alt="Award Winner">
+                </div>
+                <div class="counter-number">100+</div>
+                <p class="counter-title">Awards</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-section">
+        <div class="promo-container">
+            <div class="row">
+                <div class="col-left">
+                    <a href="https://www.youtube.com/embed/tjo2qObnppE?autoplay=1" target="_top"
+                        rel="noopener noreferrer" class="promo-btn" aria-label="Watch video on YouTube"
+                        title="Watch video on YouTube">
+                        <span class="promo-play-btn" aria-hidden="true"></span>
+                        <span class="promo-text">WATCH VIDEO</span>
+                    </a>
+                </div>
+
+                <div class="col-right">
+                    <div class="promo-text-content">
+                        <p class="promo-subtitle">OUR WATCH VIDEO</p>
+                        <h2 class="promo-title">Professional Medical Care Measure Medical.</h2>
+                        <p class="promo-description">We are privileged to work with hundreds of future-thinking medical
+                            professionals, including many of the world’s top hardware, software, and brands.</p>
+                        <a href="https://www.youtube.com/@ayurmaxhospital9179" target="_blank" class="promo-btn">Video
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials-carousel">
+        <div class="section-title-container">
+            <h2 class="section-title">Testimonials</h2>
+        </div>
+
+        <button class="carousel-arrow carousel-arrow-left" onclick="moveCarousel('Testimonials', -1)">&#8592;</button>
+
+        <div class="testimonials-container" id="testimonials-carousel-content">
+            <!-- testimonials Items will be injected here -->
+        </div>
+
+        <button class="carousel-arrow carousel-arrow-right" onclick="moveCarousel('Testimonials', 1)">&#8594;</button>
+    </section>
+
+    <section id="awards">
+        <div class="awards-container">
+            <h2>Our Achievements and Awards</h2>
+            <p>At Ayurmax Hospital, our dedication to providing exceptional Ayurvedic healthcare has been recognized
+                through numerous prestigious awards. These accolades celebrate our commitment to excellence, patient
+                care, and innovation.</p>
+
+            <div class="awards-row">
+                <div class="award-item">
+                    <h3>Pride of India Award (2015)</h3>
+                    <p>Acknowledging our outstanding contributions to the field of Ayurveda on a national scale.</p>
+                </div>
+                <div class="award-item">
+                    <h3>ASHVINI Award (2016)</h3>
+                    <p>Recognized for our exceptional service and advancements in Ayurvedic treatments.</p>
+                </div>
+                <div class="award-item">
+                    <h3>Ayurveda Gaurava Award (2017)</h3>
+                    <p>Honoring our leadership and excellence in promoting Ayurvedic wellness and care.</p>
+                </div>
+                <div class="award-item">
+                    <h3>Aarogyam Excellence in Healthcare Award (2019)</h3>
+                    <p>Recognized for our superior healthcare services and patient-centered approach.</p>
+                </div>
+                <div class="award-item">
+                    <h3>TV 100 Healthcare Excellence Award</h3>
+                    <p>Awarded for our excellence and innovation in Ayurvedic healthcare practices.</p>
+                </div>
+                <div class="award-item">
+                    <h3>Brand Icon Award, Physician of the Year (2019-2020)</h3>
+                    <p>Honoring Dr. Arvind Chaudhary for his exceptional contributions to Ayurvedic medicine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mg-carousel" id="medical-gallery-carousel">
+        <h3 class="carousel-title">Medical Gallery</h3>
+
+        <button class="carousel-arrow carousel-arrow-left" onclick="moveCarousel('MedicalGallery', -1)">&#8592;</button>
+
+        <div class="mg-carousel-content" id="medical-gallery-carousel-content">
+            <!-- Gallery Items will be injected here -->
+        </div>
+
+        <button class="carousel-arrow carousel-arrow-right" onclick="moveCarousel('MedicalGallery', 1)">&#8594;</button>
+    </section>
+
+    <a href="https://wa.me/8171200004" target="_blank" class="whatsapp-button">
+        <img src="https://img.icons8.com/?size=100&id=A1JUR9NRH7sC&format=png&color=000000" alt="WhatsApp">
+    </a>
+
+    <button id="backToTop" aria-label="Back to top">⬆️</button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <img src="assets/img/logo ayurmax.png" alt="Ayurmax Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#services">Treatment</a></li>
+                    <li><a href="#experienced-team">Doctor</a></li>
+                    <li><a href="#facility">Facility</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:ayurmaxx@gmail.com">ayurmaxx@gmail.com</a></p>
+                <p>Phone: <a href="tel:+918171200004">+91 8171200004</a></p>
+                <p>Address: 82, Vivek Vihar, Pocket 3, Balliwala Chowk, Dehradun, Uttarakhand 248001</p>
+            </div>
+            <div class="map-container">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps?q=82,+Vivek+Vihar,+Pocket+3,+Balliwala+Chowk,+Dehradun,+Uttarakhand+248001&output=embed"
+                    width="100%" height="150"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ayurmax Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

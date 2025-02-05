@@ -1,0 +1,8 @@
+# Global rules for all user agents
+User-agent: *
+Disallow: /private/        # Disallow access to private folders (e.g., sensitive info, user accounts)
+Disallow: /temp/           # Disallow temporary files, assets, etc.
+Allow: /                   # Allow access to all other pages
+
+# Sitemap location
+Sitemap: https://www.ayurmax.com/sitemap.xml
