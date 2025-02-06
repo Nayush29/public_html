@@ -313,3 +313,10 @@ backToTopButton.onclick = function () {
         behavior: "smooth" // Smooth scrolling
     });
 };
+
+
+// Function to toggle the mobile menu
+function toggleMenu() {
+    const mobileNav = document.getElementById("mobileNav");
+    mobileNav.classList.toggle("open");
+}

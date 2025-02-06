@@ -20,14 +20,14 @@
     <link rel="icon" type="image/png" href="/assets/img/fevicon.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/js/treatment.js" defer></script>
-    
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        
+
     <title>Hair Care | Ayurmax Hospital</title>
 </head>
 
@@ -39,9 +39,9 @@
                 <p>Address: 82, Vivek Vihar, Pocket 3, Balliwala Chowk, Dehradun, Uttarakhand 248001</p>
             </div>
             <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><img
+                <a href="https://www.facebook.com/ayurmaxhospital" target="_blank"><img
                         src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
-                <a href="https://instagram.com" target="_blank"><img
+                <a href="https://www.instagram.com/ayurmaxhospital" target="_blank"><img
                         src="https://img.icons8.com/color/100/instagram-new--v1.png" alt="Instagram"></a>
             </div>
         </div>
@@ -50,17 +50,38 @@
             <a href="/">
                 <img src="/assets/img/logo ayurmax.png" alt="Ayurmax Logo">
             </a>
-            <nav>
+
+            <!-- Desktop Navigation -->
+            <nav id="desktopNav">
                 <ul>
-                    <li><a href="/#services">Treatment</a></li>
-                    <li><a href="/#experienced-team">Doctor</a></li>
-                    <li><a href="/#facility">Facility</a></li>
+                    <li><a href="/#services">Treatments</a></li>
+                    <li><a href="/#experienced-team">Doctors</a></li>
+                    <li><a href="/#facility">Facilities</a></li>
                     <li><a href="/about-us.html">About Us</a></li>
-                    <li><a href="/blog.php">Blog</a></li>
+                    <li><a href="/blog.php">Blogs</a></li>
                     <li><a href="/appointment.html" class="book-now-btn">Book Appointment</a></li>
                 </ul>
             </nav>
+
+            <!-- Hamburger Icon (visible on mobile) -->
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <nav id="mobileNav">
+            <ul>
+                <li><a href="/#services">Treatments</a></li>
+                <li><a href="/#experienced-team">Doctors</a></li>
+                <li><a href="/#facility">Facilities</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/blog.php">Blogs</a></li>
+                <li><a href="/appointment.html" class="book-now-btn">Book Appointment</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hair Care Section -->
@@ -111,8 +132,7 @@
             <!-- Doctor's Words Section -->
             <div class="doctor-section">
                 <div class="doctor-img-container">
-                    <img src="/assets/img/WhatsApp-Image-2020-10-09-at-2.08.01-PM.jpeg"
-                        alt="Dr. Preeti Chaudhry">
+                    <img src="/assets/img/WhatsApp-Image-2020-10-09-at-2.08.01-PM.jpeg" alt="Dr. Preeti Chaudhry">
                 </div>
                 <div class="doctor-quote">
                     <h3>Words from Dr. Preeti Chaudhry</h3>
@@ -139,11 +159,11 @@
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/#services">Treatment</a></li>
-                    <li><a href="/#experienced-team">Doctor</a></li>
-                    <li><a href="/#facility">Facility</a></li>
+                    <li><a href="/#services">Treatments</a></li>
+                    <li><a href="/#experienced-team">Doctors</a></li>
+                    <li><a href="/#facility">Facilities</a></li>
                     <li><a href="/about-us.html">About Us</a></li>
-                    <li><a href="/blog.php">Blog</a></li>
+                    <li><a href="/blog.php">Blogs</a></li>
                 </ul>
             </div>
             <div class="footer-contact">

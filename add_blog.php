@@ -89,8 +89,8 @@ $conn->close();
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    
+
+
     <link rel="icon" href="assets/img/fevicon.png" type="image/png">
 
     <link
@@ -257,7 +257,7 @@ $conn->close();
 
 <body>
     <header>
-        <img src="/assets/img/logo ayurmax.png" alt="Ayurmax Logo" class="logo">
+        <img src="assets/img/logo ayurmax.png" alt="Ayurmax Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="#" id="viewAllBlogs">View All Blogs</a></li>

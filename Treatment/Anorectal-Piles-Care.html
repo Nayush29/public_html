@@ -48,19 +48,40 @@
 
         <div class="header-main">
             <a href="/">
-                <img src="assets/img/logo ayurmax.png" alt="Ayurmax Logo">
+                <img src="/assets/img/logo ayurmax.png" alt="Ayurmax Logo">
             </a>
-            <nav>
+
+            <!-- Desktop Navigation -->
+            <nav id="desktopNav">
                 <ul>
                     <li><a href="/#services">Treatments</a></li>
                     <li><a href="/#experienced-team">Doctors</a></li>
                     <li><a href="/#facility">Facilities</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="blog.php">Blogs</a></li>
-                    <li><a href="appointment.html" class="book-now-btn">Book Appointment</a></li>
+                    <li><a href="/about-us.html">About Us</a></li>
+                    <li><a href="/blog.php">Blogs</a></li>
+                    <li><a href="/appointment.html" class="book-now-btn">Book Appointment</a></li>
                 </ul>
             </nav>
+
+            <!-- Hamburger Icon (visible on mobile) -->
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <nav id="mobileNav">
+            <ul>
+                <li><a href="/#services">Treatments</a></li>
+                <li><a href="/#experienced-team">Doctors</a></li>
+                <li><a href="/#facility">Facilities</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/blog.php">Blogs</a></li>
+                <li><a href="/appointment.html" class="book-now-btn">Book Appointment</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Anorectal Care Section -->
@@ -118,20 +139,20 @@
                     <h3>Words from Dr. Lalit Kr. Chaudhary</h3>
                     <p>"Anorectal disorders require a holistic approach to ensure proper healing and prevention of
                         recurrence. At Ayurmax, we provide a combination of time-tested Ayurvedic therapies and
-                        personalized care to help our patients achieve lasting relief and improved quality of life."</p>            
+                        personalized care to help our patients achieve lasting relief and improved quality of life."</p>
                 </div>
             </div>
 
             <div class="doctor-section">
                 <div class="doctor-img-container">
-                    <img src="/assets/img/REKHA-MAM.png" alt="Dr. Arvind Chaudhry">
+                    <img src="/assets/img/REKHA-MAM.png" alt="Dr. Rekha Chaudhary">
                 </div>
                 <div class="doctor-quote">
                     <h3>Words from Dr. Rekha Chaudhary</h3>
                     <p>"Anorectal disorders require a holistic approach to ensure proper healing and prevention of
                         recurrence. At Ayurmax, we provide a combination of time-tested Ayurvedic therapies and
                         personalized care to help our patients achieve lasting relief and improved quality of life."</p>
-                        <a href="/appointment.html" class="book-now-btn">Book Your Appointment Now</a>
+                    <a href="/appointment.html" class="book-now-btn">Book Your Appointment Now</a>
                 </div>
             </div>
         </div>
@@ -151,11 +172,11 @@
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/#services">Treatment</a></li>
-                    <li><a href="/#experienced-team">Doctor</a></li>
-                    <li><a href="/#facility">Facility</a></li>
+                    <li><a href="/#services">Treatments</a></li>
+                    <li><a href="/#experienced-team">Doctors</a></li>
+                    <li><a href="/#facility">Facilities</a></li>
                     <li><a href="/about-us.html">About Us</a></li>
-                    <li><a href="/blog.php">Blog</a></li>
+                    <li><a href="/blog.php">Blogs</a></li>
                 </ul>
             </div>
             <div class="footer-contact">

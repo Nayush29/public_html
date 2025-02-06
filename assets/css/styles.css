@@ -13,11 +13,15 @@ h4 {
     margin: 0;
 }
 
+
+/* Top Contact Info */
 .header-top {
-    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1rem;
+    background: #ffffff;
+    color: #333;
 }
 
 .contact-info p {
@@ -203,10 +207,7 @@ footer iframe {
     }
 
     .header-main {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
+        padding: 0 15px;
     }
 
     .header-main img {
@@ -397,6 +398,7 @@ footer iframe {
 .cta-content {
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 .cta-left {
@@ -496,7 +498,7 @@ footer iframe {
 
 /* Section Container */
 .services {
-    padding: 30px 0;
+    padding: 30px;
     background-color: #fff;
 }
 
@@ -633,7 +635,7 @@ footer iframe {
 /* Experienced Team Section */
 #experienced-team {
     background-color: #f4f4f4;
-    padding: 30px 0;
+    padding: 30px;
 }
 
 #experienced-team h2 {
@@ -726,7 +728,7 @@ footer iframe {
 
 /* CSS for Facility Section */
 .facility {
-    padding: 30px 0;
+    padding: 30px;
     background-color: #fff;
 }
 
@@ -836,7 +838,7 @@ footer iframe {
 
 /* CSS for Stats Section */
 .stats-section {
-    padding: 30px 0;
+    padding: 30px;
     background-color: #f3f3f3;
 }
 
@@ -878,7 +880,7 @@ footer iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .promo-container {
@@ -1388,7 +1390,6 @@ footer iframe {
 .hero-banner img {
     width: 100%;
     height: 465px;
-    display: block;
     object-fit: fill;
 }
 
@@ -1847,33 +1848,48 @@ input[type="submit"]:hover {
 
 
 
+/* General Styles */
 #about-ayurmax {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    padding: 50px 20px;
+    background: linear-gradient(200deg, #ffffff, #f0f0f0);
 }
 
 .about-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
+/* Flexbox layout for about section */
 .about-content {
     display: flex;
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
-    /* Allow items to wrap on smaller screens */
 }
 
 .about-details {
     flex: 1;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-.about-details h1,
+.about-details h1 {
+    font-size: 2.2rem;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
 .about-details h2 {
+    font-size: 1.8rem;
     color: #00796b;
+    margin-bottom: 15px;
+}
+
+.about-details h3 {
+    font-size: 1.8rem;
+    color: #00796b;
+    margin-bottom: 15px;
 }
 
 .about-details ul {
@@ -1881,40 +1897,51 @@ input[type="submit"]:hover {
 }
 
 .about-details ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #444;
 }
 
+/* Image container */
 .about-visual {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Center image vertically */
 }
 
 .about-visual img {
     max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
 }
 
+.about-visual img:hover {
+    transform: scale(1.05);
+}
+
+/* Awards Section */
 #awards {
-    padding: 20px;
-    background-color: #ffffff;
+    padding: 50px 20px;
+    background: #ffffff;
     text-align: center;
 }
 
 .awards-container h2 {
     color: #00796b;
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .awards-container p {
     color: #555;
-    font-size: 1.1em;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
 
+/* Award Cards */
 .awards-row {
     display: flex;
     flex-wrap: wrap;
@@ -1923,38 +1950,59 @@ input[type="submit"]:hover {
 }
 
 .award-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     width: calc(33.33% - 20px);
     text-align: center;
-    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
 }
 
 .award-item h3 {
     color: #333;
-    font-size: 1.3em;
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
 .award-item p {
     color: #777;
-    font-size: 1em;
+    font-size: 1rem;
     margin: 5px;
 }
 
-/* Mobile optimization */
-@media (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 992px) {
     .about-content {
         gap: 20px;
+    }
+
+    .award-item {
+        width: calc(50% - 20px);
+        /* 2 items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
         flex-direction: column;
-        /* Stack items vertically */
         text-align: center;
+    }
+
+    .about-details {
+        text-align: left;
+    }
+
+    .about-details h1 {
+        font-size: 2rem;
+    }
+
+    .about-details h2 {
+        font-size: 1.6rem;
     }
 
     .about-visual {
@@ -1962,36 +2010,39 @@ input[type="submit"]:hover {
     }
 
     .award-item {
-        width: calc(50% - 20px);
-        /* 2 items per row on mobile */
+        width: calc(50% - 15px);
     }
 }
 
-@media (max-width: 480px) {
-    .award-item {
-        width: 100%;
-        /* 1 item per row on very small screens */
-    }
-
+@media (max-width: 576px) {
     .awards-container h2 {
-        font-size: 1.5em;
-        /* Smaller heading on small screens */
+        font-size: 1.6rem;
     }
 
     .awards-container p {
-        font-size: 1em;
-        /* Adjust paragraph font size */
+        font-size: 1rem;
+    }
+
+    .award-item {
+        width: 100%;
     }
 
     .about-details h1 {
-        font-size: 1.8em;
-        /* Smaller heading on small screens */
+        font-size: 1.7rem;
+        text-align: center;
     }
 
     .about-details h2 {
-        font-size: 1.5em;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .about-details h3 {
+        font-size: 1.3rem;
+        text-align: center;
     }
 }
+
 
 
 /* Modern style for Back to Top button */
@@ -2420,5 +2471,78 @@ input[type="submit"]:hover {
 
     .separator {
         margin: 30px 0;
+    }
+}
+
+
+
+
+
+
+
+#mobileNav {
+    display: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+    /* Hide desktop navigation and show hamburger */
+    #desktopNav {
+        display: none;
+    }
+
+    /* Show hamburger icon on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Mobile navigation hidden by default */
+    #mobileNav {
+        display: none;
+        padding: 10px;
+        background-color: #f4f7fb;
+    }
+
+    /* Show mobile nav when toggled */
+    #mobileNav.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+/* By default, show the desktop image */
+.mobile-image {
+    display: none;
+}
+
+.desktop-image {
+    display: block;
+}
+
+/* For screens less than 768px (mobile) */
+@media (max-width: 768px) {
+    .desktop-image {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
     }
 }

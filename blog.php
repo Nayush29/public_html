@@ -64,7 +64,9 @@ $conn->close();
             <a href="/">
                 <img src="assets/img/logo ayurmax.png" alt="Ayurmax Logo">
             </a>
-            <nav>
+
+            <!-- Desktop Navigation -->
+            <nav id="desktopNav">
                 <ul>
                     <li><a href="/#services">Treatments</a></li>
                     <li><a href="/#experienced-team">Doctors</a></li>
@@ -74,9 +76,27 @@ $conn->close();
                     <li><a href="appointment.html" class="book-now-btn">Book Appointment</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
 
+            <!-- Hamburger Icon (visible on mobile) -->
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <nav id="mobileNav">
+            <ul>
+                <li><a href="/#services">Treatments</a></li>
+                <li><a href="/#experienced-team">Doctors</a></li>
+                <li><a href="/#facility">Facilities</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blog.php">Blogs</a></li>
+                <li><a href="appointment.html" class="book-now-btn">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="blog-intro">
         <div class="blog-intro-content">
             <div class="intro-image">
@@ -128,11 +148,11 @@ $conn->close();
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/#services">Treatment</a></li>
-                    <li><a href="/#experienced-team">Doctor</a></li>
-                    <li><a href="/#facility">Facility</a></li>
+                    <li><a href="/#services">Treatments</a></li>
+                    <li><a href="/#experienced-team">Doctors</a></li>
+                    <li><a href="/#facility">Facilities</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="blog.php">Blogs</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -145,7 +165,7 @@ $conn->close();
                 <h3>Our Location</h3>
                 <iframe
                     src="https://www.google.com/maps?q=82,+Vivek+Vihar,+Pocket+3,+Balliwala+Chowk,+Dehradun,+Uttarakhand+248001&output=embed"
-                    width="100%" height="150" style="border: 0;" allowfullscreen></iframe>
+                    width="100%" height="150"></iframe>
             </div>
         </div>
         <div class="footer-bottom">

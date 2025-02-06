@@ -44,7 +44,7 @@ $stmt->close();
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.ayurmaxhospital.com/blog-post.php?id=<?php echo $post['id']; ?>">
     <title><?php echo htmlspecialchars($post['title']); ?> - Ayurmax Hospital Blog</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/doctor.js" defer></script>
     <link rel="icon" href="assets/img/fevicon.png" type="image/png">
 
@@ -75,7 +75,9 @@ $stmt->close();
             <a href="/">
                 <img src="assets/img/logo ayurmax.png" alt="Ayurmax Logo">
             </a>
-            <nav>
+
+            <!-- Desktop Navigation -->
+            <nav id="desktopNav">
                 <ul>
                     <li><a href="/#services">Treatments</a></li>
                     <li><a href="/#experienced-team">Doctors</a></li>
@@ -85,7 +87,26 @@ $stmt->close();
                     <li><a href="appointment.html" class="book-now-btn">Book Appointment</a></li>
                 </ul>
             </nav>
+
+            <!-- Hamburger Icon (visible on mobile) -->
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <nav id="mobileNav">
+            <ul>
+                <li><a href="/#services">Treatments</a></li>
+                <li><a href="/#experienced-team">Doctors</a></li>
+                <li><a href="/#facility">Facilities</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blog.php">Blogs</a></li>
+                <li><a href="appointment.html" class="book-now-btn">Book Appointment</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -123,11 +144,11 @@ $stmt->close();
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/#services">Treatment</a></li>
-                    <li><a href="/#experienced-team">Doctor</a></li>
-                    <li><a href="/#facility">Facility</a></li>
+                    <li><a href="/#services">Treatments</a></li>
+                    <li><a href="/#experienced-team">Doctors</a></li>
+                    <li><a href="/#facility">Facilities</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="blog.php">Blogs</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
