@@ -1610,6 +1610,11 @@ input[type="submit"]:hover {
         padding: 0;
         margin-bottom: 20px;
     }
+
+    .calendar-table th,
+    .calendar-table td {
+        padding: 5px;
+    }
 }
 
 /* Overview Styles */
@@ -2500,6 +2505,7 @@ input[type="submit"]:hover {
 
 /* Mobile view */
 @media screen and (max-width: 768px) {
+
     /* Hide desktop navigation and show hamburger */
     #desktopNav {
         display: none;
@@ -2542,6 +2548,7 @@ input[type="submit"]:hover {
     .desktop-image {
         display: none;
     }
+
     .mobile-image {
         display: block;
     }
