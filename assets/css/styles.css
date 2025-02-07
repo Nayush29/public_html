@@ -2356,8 +2356,6 @@ input[type="submit"]:hover {
     padding: 40px 20px;
     max-width: 100%;
     margin: 0;
-    background-color: #f9f9f9;
-    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     /* Modern font family */
 }
@@ -2434,8 +2432,6 @@ input[type="submit"]:hover {
     text-align: justify;
     word-wrap: break-word;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
-    /* Modern font for body text */
     letter-spacing: 0.5px;
     /* Slight letter spacing for better readability */
 }
