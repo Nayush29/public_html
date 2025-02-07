@@ -286,7 +286,7 @@ if (isMobile) {
 
 // Scroll event handler
 window.onscroll = function () {
-    const backToTopThreshold = isMobile ? 1470 : 970; // Threshold for Back to Top button
+    const backToTopThreshold = isMobile ? 1100 : 750; // Threshold for Back to Top button
     const whatsappThreshold = isMobile ? 20 : 0; // WhatsApp threshold (only on mobile)
 
     // Back to Top button visibility
