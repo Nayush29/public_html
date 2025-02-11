@@ -92,12 +92,12 @@ $(document).ready(function () {
 
         // Prevent multiple submissions
         if (formSubmitted) {
-            alert("You have already submitted an appointment.");
+            showPopup("You have already submitted an appointment.");
             return;
         }
 
         if (!selectedDate) {
-            alert("Please select a date for the appointment.");
+            showPopup("Please select a date for the appointment.");
             return;
         }
 
@@ -126,7 +126,8 @@ $(document).ready(function () {
         $('#form-container').hide();
         $('#date-container').hide();
         $('#overview').show();
-
+        $('#overview')[0].scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scrolls the section into view
+        
         // Send data via EmailJS
         emailjs.send('service_561yg8s', 'template_rx5b8zn', {
             doctor: doctor,
@@ -138,11 +139,11 @@ $(document).ready(function () {
             formattedDate: formattedDate
         })
             .then(function (response) {
-                alert('Appointment details have been sent.');
+                showPopup("Appointment details have been sent.");
                 formSubmitted = true; // Set flag to true after successful submission
                 sessionStorage.setItem('formSubmitted', true); // Save submission state to sessionStorage
             }, function (error) {
-                alert('An error occurred while sending: ' + JSON.stringify(error));
+                showPopup("An error occurred while sending: " + JSON.stringify(error));
             });
     });
 
@@ -199,4 +200,16 @@ backToTopButton.onclick = function () {
 function toggleMenu() {
     var mobileNav = document.getElementById("mobileNav");
     mobileNav.classList.toggle("open");
+}
+
+// Function to show the pop-up message
+function showPopup(message) {
+    const popup = document.getElementById('popup');
+    popup.textContent = message;  // Set the message to be displayed in the popup
+    popup.style.display = 'block';  // Show the popup
+
+    // Hide the popup after 5 seconds
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 5000);
 }
