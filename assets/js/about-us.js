@@ -1,65 +1,10 @@
-const medicalGalleryItems = [
-    {
-        title: 'Ayurvedic Hospital in Dehradun 5',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/DSC_8134-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 6',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/DSC_8147-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 7',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0210-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 8',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0233-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 9',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0233-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 10',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0237-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 11',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0246-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 12',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0261-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 13',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0268-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 14',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0281-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 15',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0376-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 16',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0443-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 17',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0526-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 18',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/IMG_0535-300x200.jpg'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun 19',
-        imageUrl: 'https://www.ayurmax.com/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-12-at-9.43.39-AM-e1602487525943-300x198.jpeg'
-    }
-];
+const medicalGalleryItems = [];
+for (let i = 1; i <= 91; i++) {
+    medicalGalleryItems.push({
+        title: 'Ayurvedic Hospital in Dehradun',
+        imageUrl: `assets/img/gallary/${i}.png`
+    });
+}
 
 const testimonialsItems = [
     {
@@ -139,13 +84,20 @@ function updateCarouselContent(type) {
         // Determine how many items to display based on device width
         const itemsToShow = window.innerWidth <= 768 ? 2 : 4;
 
+        // Clear existing carousel content
+        carouselContent.innerHTML = '';
+
+        // Loop through and create carousel items
         for (let i = 0; i < itemsToShow; i++) {
-            const currentItem = items[(currentIndex + i) % items.length];
+            const currentItem = items[(currentIndex + i) % items.length]; // Wrap around if index goes out of bounds
             const carouselItem = createElement('div', { class: 'mg-carousel-item' });
             const image = createElement('img', { src: currentItem.imageUrl, alt: currentItem.title });
             carouselItem.appendChild(image);
             carouselContent.appendChild(carouselItem);
         }
+
+        // Update the currentIndex after displaying the new set of images
+        carouselIndices.MedicalGallery = (carouselIndices.MedicalGallery + itemsToShow) % items.length;  // Move index forward for the next set
     } else if (type === 'Testimonials') {
 
         for (let i = 0; i < 1; i++) {

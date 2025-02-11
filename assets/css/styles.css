@@ -1806,11 +1806,7 @@ input[type="submit"]:hover {
 
 .custom-gallery-item img {
     width: 100%;
-    transition: transform 0.3s ease;
-}
-
-.custom-gallery-item img:hover {
-    transform: scale(0.9);
+    display: block;
 }
 
 

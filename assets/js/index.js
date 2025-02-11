@@ -161,14 +161,23 @@ function updateCarouselContent(type) {
         // Determine how many items to display based on device width
         const itemsToShow = window.innerWidth <= 768 ? 2 : 4;
 
+        // Clear existing carousel content
+        carouselContent.innerHTML = '';
+
+        // Loop through and create carousel items
         for (let i = 0; i < itemsToShow; i++) {
-            const currentItem = items[(currentIndex + i) % items.length];
+            const currentItem = items[(currentIndex + i) % items.length]; // Wrap around if index goes out of bounds
             const carouselItem = createElement('div', { class: 'mg-carousel-item' });
             const image = createElement('img', { src: currentItem.imageUrl, alt: currentItem.title });
             carouselItem.appendChild(image);
             carouselContent.appendChild(carouselItem);
         }
-    } else if (type === 'Testimonials') {
+
+        // Update the currentIndex after displaying the new set of images
+        carouselIndices.MedicalGallery = (carouselIndices.MedicalGallery + itemsToShow) % items.length;  // Move index forward for the next set
+    }
+
+    else if (type === 'Testimonials') {
 
         for (let i = 0; i < 1; i++) {
             const currentItem = items[(currentIndex + i) % items.length];
