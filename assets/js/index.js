@@ -49,68 +49,13 @@ const treatmentItems = [
     }
 ];
 
-const medicalGalleryItems = [
-    {
+const medicalGalleryItems = [];
+for (let i = 1; i <= 91; i++) {
+    medicalGalleryItems.push({
         title: 'Ayurvedic Hospital in Dehradun',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun',
-        imageUrl: 'assets/img/part 1/2.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun',
-        imageUrl: 'assets/img/part 1/6.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun',
-        imageUrl: 'assets/img/part 1/4.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun',
-        imageUrl: 'assets/img/part 1/9.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    },
-    {
-        title: 'Ayurvedic Hospital in Dehradun ',
-        imageUrl: 'assets/img/part 1/1.png'
-    }
-];
+        imageUrl: `assets/img/gallary/${i}.png`
+    });
+}
 
 const testimonialsItems = [
     {
